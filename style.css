@@ -47,8 +47,10 @@
 .fadeOut {
     animation: fadeOut 0.3s ease-in-out;
 }
-
-
+#menubutton{
+    cursor: pointer;
+transition: fill 0.3s ease;
+}
 
 body{
     margin: 0px;
@@ -69,8 +71,8 @@ header{
 #phone_menu{
     padding-top: 20px;
     margin: 0px;
-    background-color: rgba(242, 240, 240, 0.8);
-    backdrop-filter: blur(10px);
+    background-color: rgba(242, 240, 240, 0.564);
+    backdrop-filter: blur(15px);
     height: 100vh;
     transition: display 0.5s;
 }
@@ -193,11 +195,11 @@ header{
 }
 
 
-@media (min-width:500px) {
+@media (min-width:530px) {
 
     .nav{
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     #topbox h1{
         font-size: 50px;
@@ -343,6 +345,17 @@ p{
     width: 20px;
     height: 20px;
     transition: width 0.3s, height 0.3s;
+}
+
+#menubutton svg{
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    transition: fill 0.3s ease, transfrom 0.3s ease;
+}
+
+#buttonIcon{
+    transition: d 0.3s;
 }
 
 .navbutton svg:hover{
