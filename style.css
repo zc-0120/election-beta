@@ -84,6 +84,7 @@ header{
         margin-right: 5px;
         height: 400px;
         box-shadow: 3px 5px 20px 0px #d7b5b063;
+        background-size:auto;
     }
     .messagebox{
         display: flex;
@@ -163,6 +164,7 @@ header{
         margin-right: 1%; 
         height: 550px;
         box-shadow: 3px 5px 50px 0px #fcd5d08b;
+        background-size:200% ;
     }
 
     #divphoto:hover{
@@ -322,7 +324,7 @@ p{
     justify-content: center;
     border-radius: 15px;
     transition: box-shadow 0.5s;
-    background-size:100% ;
+
     
 }
 .message{
