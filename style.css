@@ -12,6 +12,43 @@
 }
 
 
+/* 定义动画 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* 隐藏元素的初始样式 */
+.hidden {
+    opacity: 0;
+    display: none;
+}
+
+/* 应用动画的类 */
+.show {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* 隐藏元素的样式 */
+.fadeOut {
+    animation: fadeOut 0.3s ease-in-out;
+}
+
+
 
 body{
     margin: 0px;
@@ -25,8 +62,29 @@ header{
     display:block;
     height: 50px;
     margin: 0px;
+
+    
+}
+
+#phone_menu{
+    padding-top: 20px;
+    margin: 0px;
     background-color: rgba(242, 240, 240, 0.8);
     backdrop-filter: blur(10px);
+    height: 100vh;
+    transition: display 0.5s;
+}
+#phone_ul{
+    display: block;
+}
+
+#phone_ul li{
+    margin:40px;
+}
+
+#phone_ul li a{
+    font-size: 30px;
+    font-family:TaipeiSans-Bold ;
 }
 
 .nav{
@@ -35,6 +93,8 @@ header{
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
+    background-color: rgba(242, 240, 240, 0.8);
+    backdrop-filter: blur(10px);
     
 }
 
@@ -136,10 +196,8 @@ header{
 @media (min-width:500px) {
 
     .nav{
-        margin-left: 10%;
-        margin-right: 10%; 
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 20%;
+        padding-right: 20%;
     }
     #topbox h1{
         font-size: 50px;
@@ -278,12 +336,21 @@ p{
     display: flex;
     align-items: center;
     justify-items: center;
+    margin: 5px;
 }
 .navbutton svg{
     align-items: center;
     width: 20px;
     height: 20px;
+    transition: width 0.3s, height 0.3s;
 }
+
+.navbutton svg:hover{
+    align-items: center;
+    width: 22px;
+    height: 22px;
+}
+
 #topbox{
     text-align: center;
 }
