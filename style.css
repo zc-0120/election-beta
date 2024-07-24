@@ -1,0 +1,167 @@
+@font-face {
+    font-family: TaipeiSans-Regular;
+    src: url(./Fonts/TaipeiSansTCBeta-Regular.ttf);
+}
+@font-face {
+    font-family: TaipeiSans-Bold;
+    src: url(./Fonts/TaipeiSansTCBeta-Bold.ttf);
+}
+
+
+body{
+    margin: 0px;
+    height: 200vh;
+    background-color: white;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+.header{
+    display: block;
+    height: 50px;
+    margin: 0px;
+    background-color: rgba(242, 240, 240, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.nav{
+    display: flex;
+    margin: 0%;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+#title h1 {
+    font-size: 50px;
+    font-family: TaipeiSans-Bold;
+}
+@media (min-width:100px) {
+    ul li{
+        display: none;
+    }
+    ul{
+        display: none;
+    }
+    .nav{
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #title{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #title p{
+        font-size: 20px;
+    }
+    #title h1{
+        font-size: 30px;
+    }
+    #img img{
+        border-radius: 10px;
+    }
+}
+
+
+@media (min-width:500px) {
+    .nav{
+        margin-left: 0%;
+        margin-right: 0%; 
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #title h1{
+        font-size: 50px;
+    }
+    #title{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    #title p{
+        font-size: 25px;
+    }
+    ul{
+        display: flex;
+    }
+}
+
+@media (min-width:900px) {
+    .nav{
+        margin-left: 10%;
+        margin-right: 10%; 
+    }
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+}
+ul li{
+    display: flex;
+    margin: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: TaipeiSans-Regular;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: TaipeiSans-Regular;
+}
+
+p{
+    font-family: TaipeiSans-Regular;
+}
+.button{
+    margin: 10px;
+    padding-top: 5px;
+}
+
+.button svg{
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}
+#title{
+    text-align: center;
+}
+
+#box-1{
+    display: block;
+    margin-top: 100px;
+}
+
+#button_ig{
+    border-radius: 100px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: 0px;
+}
+
+#button_ig:hover{
+    background-color: rgba(0, 0, 0, 0.761);
+}
+
+
+#img{
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+}
+
+#img img{
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
