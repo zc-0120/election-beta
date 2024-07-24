@@ -81,8 +81,20 @@ header{
     }
     #divphoto{
         margin-left: 5px;
-        margin-right: 5px; 
+        margin-right: 5px;
+        height: 400px;
+        box-shadow: 3px 5px 20px 0px #d7b5b063;
     }
+    .messagebox{
+        display: flex;
+        color:white;
+        background-color: black;
+        height: 35px;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
 
 
@@ -124,7 +136,35 @@ header{
     #divphoto{
         margin-left: 1%;
         margin-right: 1%; 
+        height: 550px;
+        box-shadow: 3px 5px 50px 0px #fcd5d08b;
     }
+
+    #divphoto:hover{
+        box-shadow: 3px 5px 50px 0px #debbb6;
+    }
+    #box-1{
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+        transition: margin-left 0.3s,margin-right 0.3s;
+    }
+    
+    #box-1:hover{
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .messagebox{
+        display: flex;
+        color:white;
+        background-color: black;
+        height: 50px;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
 
 
@@ -162,6 +202,8 @@ p{
     justify-items: center;
     border: 0px;
     background-color: transparent;
+    height: 50px;
+    color: black;
 }
 
 .button-box{
@@ -185,11 +227,6 @@ p{
     transition: margin-left 0.3s,margin-right 0.3s;
 }
 
-#box-1:hover{
-    display: block;
-    margin-left: 10px;
-    margin-right: 10px;
-}
 
 #button_ig{
     border-radius: 100px;
@@ -221,15 +258,7 @@ p{
 }
 
 
-.messagebox{
-    display: flex;
-    color:white;
-    background-color: black;
-    height: 50px;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .messagebox p{
     margin: 0px;
@@ -237,19 +266,12 @@ p{
 
 
 #divphoto{
-    height: 550px;
     background-image: url(./封面.png);
     display: flex;
     align-items: center;
     justify-items: center;
     justify-content: center;
     border-radius: 15px;
-    border: 1px solid gainsboro;
-    box-shadow: 3px 5px 50px 0px #fcd5d08b;
     transition: box-shadow 0.5s;
-}
-
-#divphoto:hover{
-    box-shadow: 3px 5px 50px 0px #debbb6;
 }
 
