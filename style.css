@@ -6,11 +6,15 @@
     font-family: TaipeiSans-Bold;
     src: url(./Fonts/TaipeiSansTCBeta-Bold.ttf);
 }
+@font-face {
+    font-family:IBMPlexMono-Medium ;
+    src: url(./Fonts/IBMPlexMono-Medium.ttf);
+}
+
 
 
 body{
     margin: 0px;
-    height: 200vh;
     background-color: rgba(242, 240, 240, 0.8);
 }
 header{
@@ -36,7 +40,9 @@ header{
 
 #topbox h1 {
     font-size: 50px;
-    font-family: TaipeiSans-Bold;
+    font-family: IBMPlexMono-Medium;
+    line-height: 60x;
+
 }
 @media (min-width:100px) {
     ul li{
@@ -135,6 +141,7 @@ header{
     }
     #topbox h1{
         font-size: 50px;
+        line-height: 30x;
     }
     #topbox{
         padding-left: 90px;
@@ -242,10 +249,12 @@ a{
     color: black;
     font-size: 15px;
     font-family: TaipeiSans-Regular;
+
 }
 
 p{
     font-family: TaipeiSans-Regular;
+    line-height: 25px;
 }
 
 .navbutton{
@@ -335,4 +344,34 @@ p{
 }
 
 
+#copyright_information {
+    text-align: center;
+    font-family:IBMPlexMono-Medium ;
+    font-size: 14px;
 
+}
+
+.line{
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.193);
+}
+footer{
+    margin-top: 20px;
+}
+
+
+.maintain{
+    text-align: center;
+    margin: 20px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.maintain svg{
+    height: 40px;
+    width: 40px;
+}
+
+#logobutton{
+    width: 64px;
+}
