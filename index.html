@@ -38,7 +38,9 @@
                         <svg class="feather feather-message-circle" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
                     </button>
                     <button class="navbutton" id="menubutton" onclick="openmenu()">
-                        <svg class="feather feather-menu" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+                        <svg id="toggleButton" class="button" width="27" height="27" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path id="buttonIcon" d="M4 6h16M4 12h16m-7 6h7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <!-- 汉堡菜单图形 -->
+                        </svg>
                     </button>
                 </div>
             </div>
@@ -86,9 +88,13 @@
 
         function openmenu() {
         var element = document.getElementById('phone_menu');
+        var button = document.getElementById('menubutton');
+        var icon = document.getElementById('buttonIcon');
             if (element.classList.contains('hidden')) {
                 element.classList.remove('hidden');
                 element.classList.add('show');
+
+                icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
             } else {
                 element.classList.remove('show');
                 element.classList.add('fadeOut');
@@ -97,7 +103,9 @@
                 element.addEventListener('animationend', function() {
                 element.classList.remove('fadeOut');
                 element.classList.add('hidden');
+                icon.setAttribute('d', 'M4 6h16M4 12h16m-7 6h7'); // 切换回“显示”图形
                 }, { once: true });
+
             }
          }
     </script>
