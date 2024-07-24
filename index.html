@@ -8,11 +8,14 @@
     <link rel="icon" href="./icon/LOGO.svg" type="image/x-icon" / >
 </head>
 <body>
-    <div class="message">
+    <div class="message" id="messagebox">
         <div class="messagebox">
             <svg class="feather feather-alert-octagon" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
             <p>您正在瀏覽未開發完全的網站，可能會發生錯誤。</p>
         </div>
+        <button onclick="closemessage()" alt="關閉訊息提示">
+            <svg class="feather feather-x" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+        </button>
     </div>
     <header>
         <nav class="header">
@@ -49,5 +52,11 @@
             </div>
         </div>
     </main>
+    <script>
+        function closemessage(){
+            var button = document.getElementById('messagebox')
+            button.style.display = "none"
+        }
+    </script>
 </body>
 </html>
