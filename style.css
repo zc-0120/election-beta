@@ -127,11 +127,6 @@ header{
         width: 15px;
         height: 15px;
     }
-    #copyright_information {
-        text-align: center;
-        font-family:IBMPlexMono-Medium ;
-        font-size: 12px;
-    }
 }
 
 
@@ -227,11 +222,7 @@ header{
         width: 17px;
         height: 17px;
     }
-    #copyright_information {
-        text-align: center;
-        font-family:IBMPlexMono-Medium ;
-        font-size: 14px;
-    }
+
     
 
 
@@ -380,4 +371,10 @@ footer{
 
 #logobutton{
     width: 64px;
+}
+
+#copyright_information {
+    text-align: center;
+    font-family:IBMPlexMono-Medium ;
+    font-size: 14px;
 }
