@@ -95,6 +95,31 @@ header{
         justify-content: center;
     }
 
+    .message button{
+        position:absolute;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.367);
+        margin: 5px;
+        border-radius: 100px;
+        background-color: black;
+        padding: 2px;
+        transition: background-color 0.3s;
+        margin-top: 7px;
+    }
+    
+    .message button:hover{
+        background-color: rgb(59, 57, 57);
+    }
+
+    .message button svg{
+        color: white;
+        width: 15px;
+        height: 15px;
+    }
+
 }
 
 
@@ -163,6 +188,30 @@ header{
         justify-items: center;
         align-items: center;
         justify-content: center;
+    }
+
+    .message button{
+        position:absolute;
+        right: 10%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.367);
+        margin: 10px;
+        border-radius: 100px;
+        background-color: black;
+        padding: 5px;
+        transition: background-color 0.3s;
+    }
+    
+    .message button:hover{
+        background-color: rgb(59, 57, 57);
+    }
+
+    .message button svg{
+        color: white;
+        width: 17px;
+        height: 17px;
     }
 
 }
@@ -273,5 +322,14 @@ p{
     justify-content: center;
     border-radius: 15px;
     transition: box-shadow 0.5s;
+    background-size:100% ;
+    
 }
+.message{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+
+
 
