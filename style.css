@@ -11,6 +11,20 @@
     src: url(./Fonts/IBMPlexMono-Medium.ttf);
 }
 
+@font-face {
+    font-family:PFTC-Medium ;
+    src: url(./Fonts/PingFangTC-Medium.woff2);
+}
+
+@font-face {
+    font-family:PFTC-Regular ;
+    src: url(./Fonts/PingFangTC-Regular.woff2);
+}
+
+@font-face {
+    font-family:PFTC-Semibold ;
+    src: url(./Fonts/PingFangTC-Semibold.woff2);
+}
 
 /* 定义动画 */
 @keyframes fadeIn {
@@ -55,6 +69,7 @@ transition: fill 0.3s ease;
 body{
     margin: 0px;
     background-color: rgba(242, 240, 240, 0.8);
+    font-display:swap ;
 }
 header{
     position: sticky;
@@ -86,7 +101,7 @@ header{
 
 #phone_ul li a{
     font-size: 30px;
-    font-family:TaipeiSans-Bold ;
+    font-family:PFTC-Semibold ;
 }
 
 .nav{
@@ -197,6 +212,10 @@ header{
 
 @media (min-width:530px) {
 
+    #phone_menu{
+        display: none;
+    }
+
     .nav{
         padding-left: 1%;
         padding-right: 1%;
@@ -294,6 +313,10 @@ header{
 }
 
 @media (min-width:700px) {
+
+    #phone_menu{
+        display: none;
+    }
     
     .nav{
         padding-left: 10%;
@@ -406,18 +429,23 @@ ul li{
     margin: 15px;
     margin-left: 20px;
     margin-right: 20px;
-    font-family: TaipeiSans-Regular;
+    font-family: PFTC-Regular;
 }
+
+h2{
+    font-family:PFTC-Semibold ;
+}
+
 a{
     text-decoration: none;
     color: black;
     font-size: 15px;
-    font-family: TaipeiSans-Regular;
+    font-family: PFTC-Regular;
 
 }
 
 p{
-    font-family: TaipeiSans-Regular;
+    font-family: PFTC-Regular;
     line-height: 25px;
 }
 
@@ -560,6 +588,7 @@ footer{
     text-align: center;
     font-family:IBMPlexMono-Medium ;
     margin: 0px;
+    margin-bottom: 10px;
 }
 
 
